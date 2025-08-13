@@ -1,7 +1,5 @@
-// JuviLora - Main JavaScript File
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize all features
     initScrollAnimations();
     initMobileMenu();
     initCookieBanner();
@@ -12,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
 });
 
-// Scroll-triggered animations
 function initScrollAnimations() {
     const observerOptions = {
         threshold: 0.1,
@@ -27,12 +24,10 @@ function initScrollAnimations() {
         });
     }, observerOptions);
 
-    // Observe all elements with animation classes
     const animatedElements = document.querySelectorAll('.animate-fade-up');
     animatedElements.forEach(el => observer.observe(el));
 }
 
-// Mobile menu functionality
 function initMobileMenu() {
     const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
     const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
@@ -41,7 +36,6 @@ function initMobileMenu() {
 
     if (!mobileMenuToggle || !mobileMenuOverlay) return;
 
-    // Toggle mobile menu
     mobileMenuToggle.addEventListener('click', function() {
         mobileMenuOverlay.style.display = 'block';
         setTimeout(() => {
@@ -50,7 +44,6 @@ function initMobileMenu() {
         document.body.style.overflow = 'hidden';
     });
 
-    // Close mobile menu
     function closeMobileMenu() {
         mobileMenuOverlay.classList.remove('active');
         setTimeout(() => {
@@ -63,19 +56,16 @@ function initMobileMenu() {
         mobileMenuClose.addEventListener('click', closeMobileMenu);
     }
 
-    // Close on overlay click
     mobileMenuOverlay.addEventListener('click', function(e) {
         if (e.target === mobileMenuOverlay) {
             closeMobileMenu();
         }
     });
 
-    // Close on nav link click
     mobileNavLinks.forEach(link => {
         link.addEventListener('click', closeMobileMenu);
     });
 
-    // Close on ESC key
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape' && mobileMenuOverlay.classList.contains('active')) {
             closeMobileMenu();
@@ -83,7 +73,6 @@ function initMobileMenu() {
     });
 }
 
-// Cookie banner functionality
 function initCookieBanner() {
     const cookieBanner = document.getElementById('cookie-banner');
     const cookieModal = document.getElementById('cookie-modal');
@@ -94,14 +83,12 @@ function initCookieBanner() {
     const savePreferencesBtn = document.getElementById('save-preferences');
     const acceptAllModalBtn = document.getElementById('accept-all-modal');
 
-    // Check if cookies have been set
     if (!getCookie('cookie_preferences')) {
         setTimeout(() => {
             cookieBanner.classList.add('show');
         }, 2000);
     }
 
-    // Accept all cookies
     if (acceptAllBtn) {
         acceptAllBtn.addEventListener('click', function() {
             setCookiePreferences({
@@ -113,14 +100,12 @@ function initCookieBanner() {
         });
     }
 
-    // Customize cookies
     if (customizeBtn) {
         customizeBtn.addEventListener('click', function() {
             showCookieModal();
         });
     }
 
-    // Reject all cookies
     if (rejectAllBtn) {
         rejectAllBtn.addEventListener('click', function() {
             setCookiePreferences({
@@ -132,12 +117,10 @@ function initCookieBanner() {
         });
     }
 
-    // Close modal
     if (closeModalBtn) {
         closeModalBtn.addEventListener('click', hideCookieModal);
     }
 
-    // Save preferences
     if (savePreferencesBtn) {
         savePreferencesBtn.addEventListener('click', function() {
             const preferences = {
@@ -151,7 +134,6 @@ function initCookieBanner() {
         });
     }
 
-    // Accept all from modal
     if (acceptAllModalBtn) {
         acceptAllModalBtn.addEventListener('click', function() {
             document.getElementById('analytics-cookies').checked = true;
@@ -166,7 +148,6 @@ function initCookieBanner() {
         });
     }
 
-    // Close modal on overlay click
     if (cookieModal) {
         cookieModal.addEventListener('click', function(e) {
             if (e.target === cookieModal) {
@@ -198,7 +179,6 @@ function initCookieBanner() {
     function setCookiePreferences(preferences) {
         setCookie('cookie_preferences', JSON.stringify(preferences), 365);
         
-        // Load analytics/marketing scripts based on preferences
         if (preferences.analytics) {
             loadAnalytics();
         }
@@ -209,15 +189,12 @@ function initCookieBanner() {
     }
 
     function loadAnalytics() {
-        // Placeholder for analytics code (Google Analytics, etc.)
     }
 
     function loadMarketing() {
-        // Placeholder for marketing code (Facebook Pixel, etc.)
     }
 }
 
-// Back to top button
 function initBackToTop() {
     const backToTopBtn = document.getElementById('back-to-top');
     
@@ -239,7 +216,6 @@ function initBackToTop() {
     });
 }
 
-// Smooth scroll for anchor links
 function initSmoothScroll() {
     const links = document.querySelectorAll('a[href^="#"]');
     
@@ -266,7 +242,6 @@ function initSmoothScroll() {
     });
 }
 
-// Header scroll effect
 function initHeaderScroll() {
     const header = document.querySelector('.header');
     let lastScrollTop = 0;
@@ -306,14 +281,12 @@ function initLazyLoading() {
             imageObserver.observe(img);
         });
     } else {
-        // Fallback for browsers without IntersectionObserver
         images.forEach(img => {
             img.src = img.dataset.src || img.src;
         });
     }
 }
 
-// Cookie utility functions
 function setCookie(name, value, days) {
     const expires = new Date();
     expires.setTime(expires.getTime() + (days * 24 * 60 * 60 * 1000));
@@ -331,7 +304,6 @@ function getCookie(name) {
     return null;
 }
 
-// Form validation utilities
 function validateEmail(email) {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(email);
@@ -342,7 +314,6 @@ function validatePhone(phone) {
     return re.test(phone);
 }
 
-// Contact form functionality (for contacts page)
 function initContactForm() {
     const contactForm = document.getElementById('contact-form');
     
@@ -354,26 +325,20 @@ function initContactForm() {
         const formData = new FormData(contactForm);
         const data = Object.fromEntries(formData.entries());
         
-        // Validate form
         if (!validateContactForm(data)) {
             return;
         }
         
-        // Show loading state
         const submitBtn = contactForm.querySelector('button[type="submit"]');
         const originalText = submitBtn.textContent;
         submitBtn.textContent = 'Отправка...';
         submitBtn.disabled = true;
         
-        // Simulate form submission
         setTimeout(() => {
-            // Reset form
             contactForm.reset();
             
-            // Show success message
             showNotification('Сообщение успешно отправлено! Мы свяжемся с вами в ближайшее время.', 'success');
             
-            // Reset button
             submitBtn.textContent = originalText;
             submitBtn.disabled = false;
         }, 2000);
@@ -384,28 +349,23 @@ function validateContactForm(data) {
     let isValid = true;
     const errors = [];
     
-    // Clear previous errors
     clearFormErrors();
     
-    // Validate name
     if (!data.name || data.name.trim().length < 2) {
         showFieldError('name', 'Введите корректное имя');
         isValid = false;
     }
     
-    // Validate email
     if (!data.email || !validateEmail(data.email)) {
         showFieldError('email', 'Введите корректный email');
         isValid = false;
     }
     
-    // Validate phone
     if (data.phone && !validatePhone(data.phone)) {
         showFieldError('phone', 'Введите корректный номер телефона');
         isValid = false;
     }
     
-    // Validate message
     if (!data.message || data.message.trim().length < 10) {
         showFieldError('message', 'Сообщение должно содержать минимум 10 символов');
         isValid = false;
@@ -438,7 +398,6 @@ function clearFormErrors() {
     errorMessages.forEach(message => message.remove());
 }
 
-// Notification system
 function showNotification(message, type = 'info') {
     const notification = document.createElement('div');
     notification.className = `notification notification-${type}`;
@@ -451,17 +410,14 @@ function showNotification(message, type = 'info') {
     
     document.body.appendChild(notification);
     
-    // Show notification
     setTimeout(() => {
         notification.classList.add('show');
     }, 10);
     
-    // Auto hide after 5 seconds
     setTimeout(() => {
         hideNotification(notification);
     }, 5000);
     
-    // Close button
     notification.querySelector('.notification-close').addEventListener('click', () => {
         hideNotification(notification);
     });
@@ -476,35 +432,27 @@ function hideNotification(notification) {
     }, 300);
 }
 
-// Performance monitoring
 function trackPageLoad() {
     window.addEventListener('load', function() {
         const loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
         
-        // Track to analytics if enabled
         const cookiePrefs = getCookie('cookie_preferences');
         if (cookiePrefs) {
             const prefs = JSON.parse(cookiePrefs);
             if (prefs.analytics) {
-                // Send to analytics
             }
         }
     });
 }
-
-// Initialize page-specific functionality
 function initPageSpecific() {
     const body = document.body;
     
-    // Contact page specific
     if (body.classList.contains('contacts')) {
         initContactForm();
     }
     
-    // Add more page-specific initializations here
 }
 
-// Add CSS for notifications
 const notificationStyles = `
 .notification {
     position: fixed;
@@ -586,18 +534,15 @@ const notificationStyles = `
 }
 `;
 
-// Add notification styles to head
 const styleSheet = document.createElement('style');
 styleSheet.textContent = notificationStyles;
 document.head.appendChild(styleSheet);
 
-// Initialize page-specific functionality
 document.addEventListener('DOMContentLoaded', function() {
     initPageSpecific();
     trackPageLoad();
 });
 
-// Export functions for use in other scripts
 window.JuviLora = {
     showNotification,
     validateEmail,
