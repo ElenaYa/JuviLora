@@ -1251,6 +1251,11 @@ section {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
     .hero-content {
         grid-template-columns: 1fr;
         gap: 40px;
@@ -1277,6 +1282,9 @@ section {
 }
 
 @media (max-width: 768px) {
+    .hero-section {
+        align-items: center;
+    }
     .nav {
         display: none;
     }
