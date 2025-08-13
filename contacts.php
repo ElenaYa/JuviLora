@@ -5,7 +5,6 @@ $current_page = "contacts";
 include 'partials/header.php';
 ?>
 
-<!-- Contacts Hero Section -->
 <section class="contacts-hero" id="contacts-hero">
     <div class="container">
         <div class="contacts-hero-content">
@@ -20,62 +19,47 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Contact Info & Form Section -->
 <section class="contacts-main" id="contacts-main">
     <div class="container">
         <div class="contacts-content">
-            <!-- Contact Information -->
             <div class="contact-info animate-fade-up delay-2">
                 <h2>Наши контакты</h2>
                 
-                <div class="contact-item">
-                    <div class="contact-icon">
+                <div class="contact-item-address">
+                    <div class="contact-icon-address">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                         </svg>
                     </div>
-                    <div class="contact-details">
+                    <div class="contact-details-address">
                         <h4>Адрес офиса</h4>
-                        <p>Конституциос пр. 12<br>09308 Вильнюс, Литва</p>
+                        <p><a href="https://maps.app.goo.gl/zPVx6V3tQdAgMSkAA" target="_blank">Конституциос пр. 12<br>09308 Вильнюс, Литва</a></p>
                     </div>
                 </div>
                 
-                <div class="contact-item">
-                    <div class="contact-icon">
+                <div class="contact-item-address">
+                    <div class="contact-icon-address">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
                         </svg>
                     </div>
-                    <div class="contact-details">
+                    <div class="contact-details-address">
                         <h4>Телефон</h4>
-                        <p><a href="tel:+37060123456">+370 601 23456</a></p>
+                        <p><a href="tel:+37061299856">+370 612 99856</a></p>
                         <span class="availability">Пн-Пт: 9:00-18:00</span>
                     </div>
                 </div>
                 
-                <div class="contact-item">
-                    <div class="contact-icon">
+                <div class="contact-item-address">
+                    <div class="contact-icon-address">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                         </svg>
                     </div>
-                    <div class="contact-details">
+                    <div class="contact-details-address">
                         <h4>Email</h4>
                         <p><a href="mailto:info@juvilora.com">info@juvilora.com</a></p>
                         <span class="availability">Отвечаем в течение 2 часов</span>
-                    </div>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
-                    </div>
-                    <div class="contact-details">
-                        <h4>LinkedIn</h4>
-                        <p><a href="https://linkedin.com/company/juvilora" target="_blank">linkedin.com/company/juvilora</a></p>
-                        <span class="availability">Профессиональная сеть</span>
                     </div>
                 </div>
                 
@@ -98,7 +82,6 @@ include 'partials/header.php';
                 </div>
             </div>
             
-            <!-- Contact Form -->
             <div class="contact-form-section animate-fade-up delay-3">
                 <div class="form-header">
                     <h2>Напишите нам</h2>
@@ -200,7 +183,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Map Section -->
 <section class="map-section" id="map">
     <div class="container">
         <div class="section-header">
@@ -230,21 +212,21 @@ include 'partials/header.php';
                 <h3>Как добраться</h3>
                 <div class="transport-options">
                     <div class="transport-item">
-                        <div class="transport-icon">🚌</div>
+                        <div class="transport-icon"><i class="fa-solid fa-bus-simple" aria-hidden="true"></i></div>
                         <div class="transport-info">
                             <h5>Общественный транспорт</h5>
                             <p>Автобусы: 1, 2, 33, 88<br>Остановка "Konstitucijos pr."</p>
                         </div>
                     </div>
                     <div class="transport-item">
-                        <div class="transport-icon">🚗</div>
+                        <div class="transport-icon"><i class="fa-solid fa-car-side" aria-hidden="true"></i></div>
                         <div class="transport-info">
                             <h5>На автомобиле</h5>
                             <p>Бесплатная парковка<br>во дворе здания</p>
                         </div>
                     </div>
                     <div class="transport-item">
-                        <div class="transport-icon">🚶‍♂️</div>
+                        <div class="transport-icon"><i class="fa-solid fa-person-walking" aria-hidden="true"></i></div>
                         <div class="transport-info">
                             <h5>Пешком</h5>
                             <p>5 минут от ТЦ "Europa"<br>10 минут от Старого города</p>
@@ -256,7 +238,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- FAQ Section -->
 <section class="faq-section" id="faq">
     <div class="container">
         <div class="section-header">
@@ -318,7 +299,6 @@ include 'partials/header.php';
 </section>
 
 <style>
-/* Contacts Page Specific Styles */
 .contacts-hero {
     padding: 120px 0 60px;
     background: var(--gradient-light);
@@ -357,7 +337,7 @@ include 'partials/header.php';
     color: var(--primary-dark);
 }
 
-.contact-item {
+.contact-item-address {
     display: flex;
     gap: 20px;
     margin-bottom: 32px;
@@ -367,12 +347,12 @@ include 'partials/header.php';
     transition: all var(--transition-medium);
 }
 
-.contact-item:hover {
+.contact-item-address:hover {
     background: var(--white);
     box-shadow: var(--shadow-soft);
 }
 
-.contact-icon {
+.contact-icon-address {
     width: 48px;
     height: 48px;
     background: var(--gradient-primary);
@@ -384,25 +364,25 @@ include 'partials/header.php';
     flex-shrink: 0;
 }
 
-.contact-details h4 {
+.contact-details-address h4 {
     font-size: 18px;
     font-weight: var(--font-weight-semibold);
     margin-bottom: 8px;
     color: var(--primary-dark);
 }
 
-.contact-details p {
+.contact-details-address p {
     color: var(--text-secondary);
     margin-bottom: 4px;
     line-height: 1.5;
 }
 
-.contact-details a {
+.contact-details-address a {
     color: var(--primary-amber);
     text-decoration: none;
 }
 
-.contact-details a:hover {
+.contact-details-address a:hover {
     text-decoration: underline;
 }
 
@@ -537,7 +517,10 @@ include 'partials/header.php';
 }
 
 .checkbox-label input[type="checkbox"] {
-    display: none;
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
 .checkmark {
@@ -547,20 +530,23 @@ include 'partials/header.php';
     border-radius: 4px;
     position: relative;
     flex-shrink: 0;
-    margin-top: 2px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
     transition: all var(--transition-fast);
 }
 
 .checkmark::after {
     content: '';
     position: absolute;
-    top: 2px;
-    left: 6px;
-    width: 4px;
-    height: 8px;
+    width: 6px;
+    height: 10px;
     border: solid var(--white);
     border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%) rotate(45deg);
     opacity: 0;
     transition: opacity var(--transition-fast);
 }
@@ -572,6 +558,11 @@ include 'partials/header.php';
 
 .checkbox-label input[type="checkbox"]:checked + .checkmark::after {
     opacity: 1;
+}
+
+/* Keyboard focus state */
+.checkbox-label input[type="checkbox"]:focus + .checkmark {
+    box-shadow: 0 0 0 3px rgba(255, 169, 0, 0.3);
 }
 
 .checkbox-label a {
@@ -742,7 +733,6 @@ include 'partials/header.php';
     line-height: 1.6;
 }
 
-/* Form Validation Styles */
 .form-group input.error,
 .form-group select.error,
 .form-group textarea.error {
@@ -755,7 +745,6 @@ include 'partials/header.php';
     margin-top: 4px;
 }
 
-/* Responsive Design for Contacts Page */
 @media (max-width: 1024px) {
     .contacts-content {
         grid-template-columns: 1fr;
@@ -810,7 +799,6 @@ include 'partials/header.php';
 </style>
 
 <script>
-// FAQ functionality
 document.addEventListener('DOMContentLoaded', function() {
     const faqItems = document.querySelectorAll('.faq-item');
     
@@ -820,14 +808,12 @@ document.addEventListener('DOMContentLoaded', function() {
         question.addEventListener('click', function() {
             const isActive = item.classList.contains('active');
             
-            // Close all other FAQ items
             faqItems.forEach(otherItem => {
                 if (otherItem !== item) {
                     otherItem.classList.remove('active');
                 }
             });
             
-            // Toggle current item
             if (isActive) {
                 item.classList.remove('active');
             } else {

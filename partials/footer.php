@@ -42,14 +42,14 @@
                             <div class="contact-item">
                                 <span class="contact-icon">📍</span>
                                 <div class="contact-info">
-                                    <div>Конституциос пр. 12</div>
+                                    <div><a href="https://maps.app.goo.gl/zPVx6V3tQdAgMSkAA" target="_blank">Конституциос пр. 12</a></div>
                                     <div>09308 Вильнюс, Литва</div>
                                 </div>
                             </div>
                             <div class="contact-item">
                                 <span class="contact-icon">📞</span>
                                 <div class="contact-info">
-                                    <a href="tel:+37060123456">+370 601 23456</a>
+                                    <a href="tel:+37061299856">+370 612 99856</a>
                                 </div>
                             </div>
                             <div class="contact-item">
@@ -81,14 +81,12 @@
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
     <button class="back-to-top" id="back-to-top" aria-label="Наверх">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
             <path d="M12 2l8 8h-5v10h-6V10H4l8-8z"/>
         </svg>
     </button>
 
-    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 </html>
