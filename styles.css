@@ -984,24 +984,24 @@ section {
     gap: 16px;
 }
 
-.contact-item {
+.contact-item-footer {
     display: flex;
     gap: 12px;
     align-items: flex-start;
 }
 
-.contact-icon {
+.contact-icon-footer {
     font-size: 18px;
     flex-shrink: 0;
 }
 
-.contact-info a {
+.contact-info-footer a {
     color: var(--white);
     text-decoration: none;
     transition: color var(--transition-fast);
 }
 
-.contact-info a:hover {
+.contact-info-footer a:hover {
     color: var(--primary-amber);
 }
 

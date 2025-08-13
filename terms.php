@@ -31,7 +31,7 @@ include 'partials/header.php';
                     <p><strong>Наименование:</strong> JuviLora</p>
                     <p><strong>Юридический адрес:</strong> Конституциос пр. 12, 09308 Вильнюс, Литва</p>
                     <p><strong>Email:</strong> <a href="mailto:info@juvilora.com">info@juvilora.com</a></p>
-                    <p><strong>Телефон:</strong> <a href="tel:+37060123456">+370 601 23456</a></p>
+                    <p><strong>Телефон:</strong> <a href="tel:+37061299856">+370 612 99856</a></p>
                     <p><strong>Веб-сайт:</strong> <a href="https://juvilora.com">juvilora.com</a></p>
                 </div>
             </div>
@@ -296,7 +296,7 @@ include 'partials/header.php';
                 </p>
                 <div class="contact-info">
                     <p><strong>Email:</strong> <a href="mailto:legal@juvilora.com">legal@juvilora.com</a></p>
-                    <p><strong>Телефон:</strong> <a href="tel:+37060123456">+370 601 23456</a></p>
+                    <p><strong>Телефон:</strong> <a href="tel:+37061299856">+370 612 99856</a></p>
                     <p><strong>Почтовый адрес:</strong> Конституциос пр. 12, 09308 Вильнюс, Литва</p>
                     <p><strong>Часы работы:</strong> Понедельник-Пятница, 9:00-18:00 (GMT+2)</p>
                 </div>
@@ -322,7 +322,107 @@ include 'partials/header.php';
 </section>
 
 <style>
-/* Terms of Service Specific Styles */
+.legal-page {
+    padding: 120px 0 80px;
+    background: var(--white);
+    min-height: 70vh;
+}
+
+.legal-content {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.legal-content h1 {
+    font-size: 40px;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 16px;
+    color: var(--primary-dark);
+}
+
+.last-updated {
+    color: var(--text-secondary);
+    font-style: italic;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--neutral-medium);
+}
+
+.legal-section {
+    margin-bottom: 40px;
+}
+
+.legal-section h2 {
+    font-size: 28px;
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: 20px;
+    color: var(--primary-dark);
+    position: relative;
+}
+
+.legal-section h2::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 24px;
+    background: var(--gradient-primary);
+    border-radius: 2px;
+}
+
+.legal-section h3 {
+    font-size: 20px;
+    font-weight: var(--font-weight-medium);
+    margin: 24px 0 12px;
+    color: var(--primary-dark);
+}
+
+.legal-section h4 {
+    font-size: 16px;
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: 8px;
+    color: var(--primary-dark);
+}
+
+.legal-section p {
+    margin-bottom: 16px;
+    color: var(--text-primary);
+}
+
+.legal-section ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.legal-section li {
+    margin-bottom: 8px;
+    color: var(--text-primary);
+}
+
+.legal-section a {
+    color: var(--primary-amber);
+    text-decoration: none;
+}
+
+.legal-section a:hover {
+    text-decoration: underline;
+}
+
+.contact-info {
+    background: var(--gradient-light);
+    padding: 24px;
+    border-radius: var(--radius-medium);
+    margin: 20px 0;
+}
+
+.contact-info p {
+    margin-bottom: 8px;
+}
+
+/* Optional block used on this page */
 .pricing-summary {
     display: grid;
     gap: 16px;
@@ -330,10 +430,10 @@ include 'partials/header.php';
 }
 
 .price-item {
-    background: var(--gradient-light);
+    background: var(--neutral-light);
     padding: 20px;
     border-radius: var(--radius-medium);
-    border-left: 4px solid var(--primary-amber);
+    border: 1px solid var(--neutral-medium);
 }
 
 .price-item h4 {
@@ -348,45 +448,35 @@ include 'partials/header.php';
     font-size: 14px;
 }
 
-/* Enhanced styling for better readability */
-.legal-section h3 {
-    margin-top: 32px;
-    margin-bottom: 16px;
-    color: var(--primary-amber);
-}
-
-.legal-section h4 {
-    color: var(--primary-dark);
-    margin-top: 20px;
-    margin-bottom: 12px;
-}
-
-/* Highlight important sections */
-.legal-section:nth-child(5),
-.legal-section:nth-child(7),
-.legal-section:nth-child(10) {
-    background: var(--neutral-light);
-    padding: 24px;
-    border-radius: var(--radius-medium);
-    border-left: 4px solid var(--primary-amber);
-}
-
-/* Responsive adjustments */
 @media (max-width: 768px) {
-    .pricing-summary {
-        gap: 12px;
+    .legal-content h1 {
+        font-size: 32px;
     }
     
-    .price-item {
-        padding: 16px;
+    .legal-section h2 {
+        font-size: 24px;
     }
     
-    .legal-section:nth-child(5),
-    .legal-section:nth-child(7),
-    .legal-section:nth-child(10) {
+    .legal-section h2::before {
+        display: none;
+    }
+    
+    .contact-info {
         padding: 16px;
-        margin-left: -16px;
-        margin-right: -16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .legal-content h1 {
+        font-size: 28px;
+    }
+    
+    .legal-section h2 {
+        font-size: 22px;
+    }
+    
+    .legal-section h3 {
+        font-size: 18px;
     }
 }
 </style>

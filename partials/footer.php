@@ -39,22 +39,22 @@
                     <div class="footer-section">
                         <h3>Контакты</h3>
                         <div class="footer-contact">
-                            <div class="contact-item">
-                                <span class="contact-icon">📍</span>
-                                <div class="contact-info">
+                            <div class="contact-item-footer">
+                                <span class="contact-icon-footer">📍</span>
+                                <div class="contact-info-footer">
                                     <div><a href="https://maps.app.goo.gl/zPVx6V3tQdAgMSkAA" target="_blank">Конституциос пр. 12</a></div>
                                     <div>09308 Вильнюс, Литва</div>
                                 </div>
                             </div>
-                            <div class="contact-item">
-                                <span class="contact-icon">📞</span>
-                                <div class="contact-info">
+                            <div class="contact-item-footer">
+                                <span class="contact-icon-footer">📞</span>
+                                <div class="contact-info-footer">
                                     <a href="tel:+37061299856">+370 612 99856</a>
                                 </div>
                             </div>
-                            <div class="contact-item">
-                                <span class="contact-icon">✉️</span>
-                                <div class="contact-info">
+                                <div class="contact-item-footer">
+                                <span class="contact-icon-footer">✉️</span>
+                                <div class="contact-info-footer">
                                     <a href="mailto:info@juvilora.com">info@juvilora.com</a>
                                 </div>
                             </div>

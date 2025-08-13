@@ -31,7 +31,7 @@ include 'partials/header.php';
                     <p><strong>Контролер данных:</strong> JuviLora</p>
                     <p><strong>Адрес:</strong> Конституциос пр. 12, 09308 Вильнюс, Литва</p>
                     <p><strong>Email:</strong> <a href="mailto:privacy@juvilora.com">privacy@juvilora.com</a></p>
-                    <p><strong>Телефон:</strong> <a href="tel:+37060123456">+370 601 23456</a></p>
+                    <p><strong>Телефон:</strong> <a href="tel:+37061299856">+370 612 99856</a></p>
                 </div>
             </div>
 
@@ -202,7 +202,7 @@ include 'partials/header.php';
                     <p><strong>Государственная инспекция по защите данных Литвы</strong></p>
                     <p>Адрес: A. Juozapavičiaus g. 6, 09310 Vilnius</p>
                     <p>Email: ada@ada.lt</p>
-                    <p>Телефон: +370 5 279 14 45</p>
+                    <p>Телефон: +370 612 99856</p>
                 </div>
             </div>
 
@@ -215,7 +215,7 @@ include 'partials/header.php';
                 <div class="contact-info">
                     <p><strong>Email:</strong> <a href="mailto:privacy@juvilora.com">privacy@juvilora.com</a></p>
                     <p><strong>Почтовый адрес:</strong> Конституциос пр. 12, 09308 Вильнюс, Литва</p>
-                    <p><strong>Телефон:</strong> <a href="tel:+37060123456">+370 601 23456</a></p>
+                    <p><strong>Телефон:</strong> <a href="tel:+37061299856">+370 612 99856</a></p>
                 </div>
             </div>
         </div>
@@ -223,7 +223,6 @@ include 'partials/header.php';
 </section>
 
 <style>
-/* Legal Pages Styles */
 .legal-page {
     padding: 120px 0 80px;
     background: var(--white);
@@ -354,7 +353,6 @@ include 'partials/header.php';
     margin: 0;
 }
 
-/* Responsive Design for Legal Pages */
 @media (max-width: 768px) {
     .legal-content h1 {
         font-size: 32px;

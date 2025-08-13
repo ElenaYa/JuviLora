@@ -307,7 +307,7 @@ include 'partials/header.php';
                 </p>
                 <div class="contact-info">
                     <p><strong>Email:</strong> <a href="mailto:privacy@juvilora.com">privacy@juvilora.com</a></p>
-                    <p><strong>Телефон:</strong> <a href="tel:+37060123456">+370 601 23456</a></p>
+                    <p><strong>Телефон:</strong> <a href="tel:+37061299856">+370 612 99856</a></p>
                     <p><strong>Адрес:</strong> Конституциос пр. 12, 09308 Вильнюс, Литва</p>
                 </div>
             </div>
@@ -316,6 +316,107 @@ include 'partials/header.php';
 </section>
 
 <style>
+/* Legal base styles (match privacy.php) */
+.legal-page {
+    padding: 120px 0 80px;
+    background: var(--white);
+    min-height: 70vh;
+}
+
+.legal-content {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.legal-content h1 {
+    font-size: 40px;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 16px;
+    color: var(--primary-dark);
+}
+
+.last-updated {
+    color: var(--text-secondary);
+    font-style: italic;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--neutral-medium);
+}
+
+.legal-section {
+    margin-bottom: 40px;
+}
+
+.legal-section h2 {
+    font-size: 28px;
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: 20px;
+    color: var(--primary-dark);
+    position: relative;
+}
+
+.legal-section h2::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 24px;
+    background: var(--gradient-primary);
+    border-radius: 2px;
+}
+
+.legal-section h3 {
+    font-size: 20px;
+    font-weight: var(--font-weight-medium);
+    margin: 24px 0 12px;
+    color: var(--primary-dark);
+}
+
+.legal-section h4 {
+    font-size: 16px;
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: 8px;
+    color: var(--primary-dark);
+}
+
+.legal-section p {
+    margin-bottom: 16px;
+    color: var(--text-primary);
+}
+
+.legal-section ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.legal-section li {
+    margin-bottom: 8px;
+    color: var(--text-primary);
+}
+
+.legal-section a {
+    color: var(--primary-amber);
+    text-decoration: none;
+}
+
+.legal-section a:hover {
+    text-decoration: underline;
+}
+
+.contact-info {
+    background: var(--gradient-light);
+    padding: 24px;
+    border-radius: var(--radius-medium);
+    margin: 20px 0;
+}
+
+.contact-info p {
+    margin-bottom: 8px;
+}
+
 /* Cookie Policy Specific Styles */
 .cookie-category {
     background: var(--neutral-light);
@@ -466,8 +567,22 @@ include 'partials/header.php';
     border-bottom: none;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
+    .legal-content h1 {
+        font-size: 32px;
+    }
+    
+    .legal-section h2 {
+        font-size: 24px;
+    }
+    
+    .legal-section h2::before {
+        display: none;
+    }
+    
+    .contact-info {
+        padding: 16px;
+    }
     .cookie-table,
     .impact-table {
         font-size: 14px;
@@ -488,16 +603,28 @@ include 'partials/header.php';
         padding: 16px;
     }
 }
+
+@media (max-width: 480px) {
+    .legal-content h1 {
+        font-size: 28px;
+    }
+    
+    .legal-section h2 {
+        font-size: 22px;
+    }
+    
+    .legal-section h3 {
+        font-size: 18px;
+    }
+}
 </style>
 
 <script>
-// Cookie management functionality
 document.addEventListener('DOMContentLoaded', function() {
     const manageCookiesBtn = document.getElementById('manage-cookies');
     
     if (manageCookiesBtn) {
         manageCookiesBtn.addEventListener('click', function() {
-            // Show cookie preferences modal
             const cookieModal = document.getElementById('cookie-modal');
             if (cookieModal) {
                 cookieModal.style.display = 'flex';

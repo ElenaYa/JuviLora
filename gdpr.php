@@ -199,85 +199,8 @@ include 'partials/header.php';
                 </div>
             </div>
 
-            <div class="legal-section animate-fade-up delay-4">
-                <h2>3. Как реализовать свои права</h2>
-                
-                <div class="request-process">
-                    <div class="process-step">
-                        <div class="step-number">1</div>
-                        <div class="step-content">
-                            <h4>Отправьте запрос</h4>
-                            <p>Направьте запрос на <a href="mailto:privacy@juvilora.com">privacy@juvilora.com</a> или воспользуйтесь формой ниже</p>
-                        </div>
-                    </div>
-                    
-                    <div class="process-step">
-                        <div class="step-number">2</div>
-                        <div class="step-content">
-                            <h4>Подтверждение личности</h4>
-                            <p>Мы можем попросить подтвердить вашу личность для защиты ваших данных</p>
-                        </div>
-                    </div>
-                    
-                    <div class="process-step">
-                        <div class="step-number">3</div>
-                        <div class="step-content">
-                            <h4>Обработка запроса</h4>
-                            <p>Мы рассмотрим ваш запрос в течение 30 дней и уведомим о принятых мерах</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gdpr-request-form">
-                    <h3>Форма запроса по защите данных</h3>
-                    <form class="request-form" id="gdpr-request-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="gdpr-name">Полное имя *</label>
-                                <input type="text" id="gdpr-name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="gdpr-email">Email *</label>
-                                <input type="email" id="gdpr-email" name="email" required>
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="gdpr-request-type">Тип запроса *</label>
-                            <select id="gdpr-request-type" name="request_type" required>
-                                <option value="">Выберите тип запроса</option>
-                                <option value="access">Доступ к данным</option>
-                                <option value="rectification">Исправление данных</option>
-                                <option value="erasure">Удаление данных</option>
-                                <option value="restriction">Ограничение обработки</option>
-                                <option value="portability">Переносимость данных</option>
-                                <option value="objection">Возражение против обработки</option>
-                                <option value="other">Другое</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="gdpr-details">Детали запроса *</label>
-                            <textarea id="gdpr-details" name="details" rows="5" required placeholder="Опишите подробно ваш запрос..."></textarea>
-                        </div>
-                        
-                        <div class="form-group checkbox-group">
-                            <label class="checkbox-label">
-                                <input type="checkbox" id="gdpr-identity" name="identity_confirmation" required>
-                                <span class="checkmark"></span>
-                                Я подтверждаю, что предоставленная информация верна, и готов предоставить дополнительные документы для подтверждения личности при необходимости
-                            </label>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary btn-large">
-                            Отправить запрос
-                        </button>
-                    </form>
-                </div>
-            </div>
-
             <div class="legal-section animate-fade-up delay-5">
-                <h2>4. Наши обязательства по GDPR</h2>
+                <h2>3. Наши обязательства по GDPR</h2>
                 
                 <div class="commitments-grid">
                     <div class="commitment-item">
@@ -313,7 +236,7 @@ include 'partials/header.php';
             </div>
 
             <div class="legal-section animate-fade-up delay-6">
-                <h2>5. Уведомление о нарушениях</h2>
+                <h2>4. Уведомление о нарушениях</h2>
                 <p>
                     В случае нарушения безопасности персональных данных, которое может привести 
                     к риску для ваших прав и свобод, мы:
@@ -328,7 +251,7 @@ include 'partials/header.php';
             </div>
 
             <div class="legal-section animate-fade-up delay-7">
-                <h2>6. Международные передачи данных</h2>
+                <h2>5. Международные передачи данных</h2>
                 <p>
                     При необходимости передачи ваших данных за пределы ЕЭЗ мы обеспечиваем 
                     адекватный уровень защиты через:
@@ -358,7 +281,7 @@ include 'partials/header.php';
             </div>
 
             <div class="legal-section animate-fade-up delay-8">
-                <h2>7. Жалобы и надзорные органы</h2>
+                <h2>6. Жалобы и надзорные органы</h2>
                 <p>
                     Если вы считаете, что мы нарушаем ваши права на защиту данных, 
                     вы можете подать жалобу:
@@ -370,7 +293,7 @@ include 'partials/header.php';
                         <div class="authority-contact">
                             <p><strong>Адрес:</strong> A. Juozapavičiaus g. 6, 09310 Vilnius</p>
                             <p><strong>Email:</strong> ada@ada.lt</p>
-                            <p><strong>Телефон:</strong> +370 5 279 14 45</p>
+                            <p><strong>Телефон:</strong> +370 612 99856</p>
                             <p><strong>Сайт:</strong> <a href="https://ada.lt" target="_blank">ada.lt</a></p>
                         </div>
                     </div>
@@ -386,14 +309,14 @@ include 'partials/header.php';
             </div>
 
             <div class="legal-section animate-fade-up delay-9">
-                <h2>8. Контактная информация</h2>
+                <h2>7. Контактная информация</h2>
                 <p>
                     По всем вопросам, связанным с защитой персональных данных и GDPR:
                 </p>
                 <div class="contact-info">
                     <p><strong>Специалист по защите данных:</strong> Анна Петрова</p>
                     <p><strong>Email:</strong> <a href="mailto:privacy@juvilora.com">privacy@juvilora.com</a></p>
-                    <p><strong>Телефон:</strong> <a href="tel:+37060123456">+370 601 23456</a></p>
+                    <p><strong>Телефон:</strong> <a href="tel:+37061299856">+370 612 99856</a></p>
                     <p><strong>Почтовый адрес:</strong> Конституциос пр. 12, 09308 Вильнюс, Литва</p>
                     <p><strong>Часы работы:</strong> Понедельник-Пятница, 9:00-18:00 (GMT+2)</p>
                 </div>
@@ -408,7 +331,106 @@ include 'partials/header.php';
 </section>
 
 <style>
-/* GDPR Page Specific Styles */
+/* Legal base styles (match privacy.php) */
+.legal-page {
+    padding: 120px 0 80px;
+    background: var(--white);
+    min-height: 70vh;
+}
+
+.legal-content {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.legal-content h1 {
+    font-size: 40px;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 16px;
+    color: var(--primary-dark);
+}
+
+.last-updated {
+    color: var(--text-secondary);
+    font-style: italic;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--neutral-medium);
+}
+
+.legal-section {
+    margin-bottom: 40px;
+}
+
+.legal-section h2 {
+    font-size: 28px;
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: 20px;
+    color: var(--primary-dark);
+    position: relative;
+}
+
+.legal-section h2::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 24px;
+    background: var(--gradient-primary);
+    border-radius: 2px;
+}
+
+.legal-section h3 {
+    font-size: 20px;
+    font-weight: var(--font-weight-medium);
+    margin: 24px 0 12px;
+    color: var(--primary-dark);
+}
+
+.legal-section h4 {
+    font-size: 16px;
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: 8px;
+    color: var(--primary-dark);
+}
+
+.legal-section p {
+    margin-bottom: 16px;
+    color: var(--text-primary);
+}
+
+.legal-section ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.legal-section li {
+    margin-bottom: 8px;
+    color: var(--text-primary);
+}
+
+.legal-section a {
+    color: var(--primary-amber);
+    text-decoration: none;
+}
+
+.legal-section a:hover {
+    text-decoration: underline;
+}
+
+.contact-info {
+    background: var(--gradient-light);
+    padding: 24px;
+    border-radius: var(--radius-medium);
+    margin: 20px 0;
+}
+
+.contact-info p {
+    margin-bottom: 8px;
+}
 .rights-detailed {
     margin: 32px 0;
 }
@@ -591,7 +613,6 @@ include 'partials/header.php';
     text-decoration: underline;
 }
 
-/* Form styles specific to GDPR requests */
 .request-form .form-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -635,8 +656,82 @@ include 'partials/header.php';
     min-height: 120px;
 }
 
-/* Responsive Design */
+.checkbox-group {
+    margin-bottom: 20px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    cursor: pointer;
+    line-height: 1.5;
+}
+
+.checkbox-label input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.checkmark {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--neutral-medium);
+    border-radius: 4px;
+    position: relative;
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    transition: all var(--transition-fast);
+}
+
+.checkmark::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 10px;
+    border: solid var(--white);
+    border-width: 0 2px 2px 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%) rotate(45deg);
+    opacity: 0;
+    transition: opacity var(--transition-fast);
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkmark {
+    background: var(--primary-amber);
+    border-color: var(--primary-amber);
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkmark::after {
+    opacity: 1;
+}
+
+.checkbox-label input[type="checkbox"]:focus + .checkmark {
+    box-shadow: 0 0 0 3px rgba(255, 169, 0, 0.3);
+}
+
 @media (max-width: 768px) {
+    .legal-content h1 {
+        font-size: 32px;
+    }
+
+    .legal-section h2 {
+        font-size: 24px;
+    }
+
+    .legal-section h2::before {
+        display: none;
+    }
+
+    .contact-info {
+        padding: 16px;
+    }
     .request-process {
         flex-direction: column;
         gap: 24px;
@@ -677,115 +772,20 @@ include 'partials/header.php';
     .mechanism-item {
         padding: 16px;
     }
+
+    .legal-content h1 {
+        font-size: 28px;
+    }
+
+    .legal-section h2 {
+        font-size: 22px;
+    }
+
+    .legal-section h3 {
+        font-size: 18px;
+    }
 }
 </style>
 
-<script>
-// GDPR Request Form functionality
-document.addEventListener('DOMContentLoaded', function() {
-    const gdprForm = document.getElementById('gdpr-request-form');
-    
-    if (gdprForm) {
-        gdprForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const formData = new FormData(gdprForm);
-            const data = Object.fromEntries(formData.entries());
-            
-            // Validate form
-            if (!validateGDPRForm(data)) {
-                return;
-            }
-            
-            // Show loading state
-            const submitBtn = gdprForm.querySelector('button[type="submit"]');
-            const originalText = submitBtn.textContent;
-            submitBtn.textContent = 'Отправка запроса...';
-            submitBtn.disabled = true;
-            
-            // Simulate form submission
-            setTimeout(() => {
-                // Reset form
-                gdprForm.reset();
-                
-                // Show success message
-                if (window.JuviLora && window.JuviLora.showNotification) {
-                    window.JuviLora.showNotification(
-                        'Запрос по защите данных успешно отправлен. Мы рассмотрим его в течение 30 дней и свяжемся с вами.',
-                        'success'
-                    );
-                }
-                
-                // Reset button
-                submitBtn.textContent = originalText;
-                submitBtn.disabled = false;
-            }, 2000);
-        });
-    }
-});
-
-function validateGDPRForm(data) {
-    let isValid = true;
-    
-    // Clear previous errors
-    clearFormErrors();
-    
-    // Validate name
-    if (!data.name || data.name.trim().length < 2) {
-        showFieldError('gdpr-name', 'Введите полное имя');
-        isValid = false;
-    }
-    
-    // Validate email
-    if (!data.email || !window.JuviLora.validateEmail(data.email)) {
-        showFieldError('gdpr-email', 'Введите корректный email');
-        isValid = false;
-    }
-    
-    // Validate request type
-    if (!data.request_type) {
-        showFieldError('gdpr-request-type', 'Выберите тип запроса');
-        isValid = false;
-    }
-    
-    // Validate details
-    if (!data.details || data.details.trim().length < 10) {
-        showFieldError('gdpr-details', 'Опишите ваш запрос подробнее (минимум 10 символов)');
-        isValid = false;
-    }
-    
-    // Validate identity confirmation
-    if (!data.identity_confirmation) {
-        showFieldError('gdpr-identity', 'Необходимо подтвердить достоверность информации');
-        isValid = false;
-    }
-    
-    return isValid;
-}
-
-function showFieldError(fieldId, message) {
-    const field = document.getElementById(fieldId);
-    if (!field) return;
-    
-    field.classList.add('error');
-    
-    let errorElement = field.parentNode.querySelector('.field-error');
-    if (!errorElement) {
-        errorElement = document.createElement('div');
-        errorElement.className = 'field-error';
-        field.parentNode.appendChild(errorElement);
-    }
-    
-    errorElement.textContent = message;
-}
-
-function clearFormErrors() {
-    const errorFields = document.querySelectorAll('#gdpr-request-form .error');
-    const errorMessages = document.querySelectorAll('#gdpr-request-form .field-error');
-    
-    errorFields.forEach(field => field.classList.remove('error'));
-    errorMessages.forEach(message => message.remove());
-}
-</script>
 
 <?php include 'partials/footer.php'; ?>
