@@ -5,7 +5,6 @@ $current_page = "services";
 include 'partials/header.php';
 ?>
 
-<!-- Services Hero Section -->
 <section class="services-hero" id="services-hero">
     <div class="container">
         <div class="services-hero-content">
@@ -26,7 +25,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Design Services Section -->
 <section class="service-detail" id="design">
     <div class="container">
         <div class="service-content">
@@ -41,28 +39,28 @@ include 'partials/header.php';
                     <h4>Специализации:</h4>
                     <div class="features-grid">
                         <div class="feature-item">
-                            <div class="feature-icon">🎨</div>
+                            <div class="feature-icon"><i class="fa-solid fa-palette" aria-hidden="true"></i></div>
                             <div class="feature-content">
                                 <h5>UI Дизайнеры</h5>
                                 <p>Создание интерфейсов веб и мобильных приложений</p>
                             </div>
                         </div>
                         <div class="feature-item">
-                            <div class="feature-icon">👤</div>
+                            <div class="feature-icon"><i class="fa-solid fa-user" aria-hidden="true"></i></div>
                             <div class="feature-content">
                                 <h5>UX Дизайнеры</h5>
                                 <p>Исследование пользователей и проектирование опыта</p>
                             </div>
                         </div>
                         <div class="feature-item">
-                            <div class="feature-icon">📱</div>
+                            <div class="feature-icon"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i></div>
                             <div class="feature-content">
                                 <h5>Продуктовые дизайнеры</h5>
                                 <p>Комплексная работа над продуктом от идеи до реализации</p>
                             </div>
                         </div>
                         <div class="feature-item">
-                            <div class="feature-icon">🖼️</div>
+                            <div class="feature-icon"><i class="fa-solid fa-image" aria-hidden="true"></i></div>
                             <div class="feature-content">
                                 <h5>Графические дизайнеры</h5>
                                 <p>Брендинг, иллюстрации и визуальная айдентика</p>
@@ -92,7 +90,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Development Services Section -->
 <section class="service-detail alt" id="development">
     <div class="container">
         <div class="service-content">
@@ -110,28 +107,28 @@ include 'partials/header.php';
                     <h4>Направления разработки:</h4>
                     <div class="features-grid">
                         <div class="feature-item">
-                            <div class="feature-icon">🌐</div>
+                            <div class="feature-icon"><i class="fa-solid fa-globe" aria-hidden="true"></i></div>
                             <div class="feature-content">
                                 <h5>Frontend разработчики</h5>
                                 <p>React, Vue.js, Angular, TypeScript</p>
                             </div>
                         </div>
                         <div class="feature-item">
-                            <div class="feature-icon">⚙️</div>
+                            <div class="feature-icon"><i class="fa-solid fa-gear" aria-hidden="true"></i></div>
                             <div class="feature-content">
                                 <h5>Backend разработчики</h5>
                                 <p>PHP, Node.js, Python, Java, .NET</p>
                             </div>
                         </div>
                         <div class="feature-item">
-                            <div class="feature-icon">🔄</div>
+                            <div class="feature-icon"><i class="fa-solid fa-arrows-rotate" aria-hidden="true"></i></div>
                             <div class="feature-content">
                                 <h5>Fullstack разработчики</h5>
                                 <p>Полный цикл разработки веб-приложений</p>
                             </div>
                         </div>
                         <div class="feature-item">
-                            <div class="feature-icon">☁️</div>
+                            <div class="feature-icon"><i class="fa-solid fa-cloud" aria-hidden="true"></i></div>
                             <div class="feature-content">
                                 <h5>DevOps инженеры</h5>
                                 <p>AWS, Docker, Kubernetes, CI/CD</p>
@@ -162,7 +159,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- QA Services Section -->
 <section class="service-detail" id="qa">
     <div class="container">
         <div class="service-content">
@@ -177,28 +173,28 @@ include 'partials/header.php';
                     <h4>Виды тестирования:</h4>
                     <div class="features-grid">
                         <div class="feature-item">
-                            <div class="feature-icon">🔍</div>
+                            <div class="feature-icon"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
                             <div class="feature-content">
                                 <h5>Manual QA</h5>
                                 <p>Функциональное, регрессионное, UI/UX тестирование</p>
                             </div>
                         </div>
                         <div class="feature-item">
-                            <div class="feature-icon">🤖</div>
+                            <div class="feature-icon"><i class="fa-solid fa-robot" aria-hidden="true"></i></div>
                             <div class="feature-content">
                                 <h5>Automation QA</h5>
                                 <p>Автоматизация тестирования UI и API</p>
                             </div>
                         </div>
                         <div class="feature-item">
-                            <div class="feature-icon">📊</div>
+                            <div class="feature-icon"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></div>
                             <div class="feature-content">
                                 <h5>Performance тестирование</h5>
                                 <p>Нагрузочное и стресс-тестирование</p>
                             </div>
                         </div>
                         <div class="feature-item">
-                            <div class="feature-icon">🛡️</div>
+                            <div class="feature-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
                             <div class="feature-content">
                                 <h5>Security тестирование</h5>
                                 <p>Проверка безопасности и уязвимостей</p>
@@ -228,7 +224,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Project Management Services Section -->
 <section class="service-detail alt" id="pm">
     <div class="container">
         <div class="service-content">
@@ -246,28 +241,28 @@ include 'partials/header.php';
                     <h4>Роли и позиции:</h4>
                     <div class="features-grid">
                         <div class="feature-item">
-                            <div class="feature-icon">👨‍💼</div>
+                            <div class="feature-icon"><i class="fa-solid fa-user-tie" aria-hidden="true"></i></div>
                             <div class="feature-content">
                                 <h5>Project Manager</h5>
                                 <p>Планирование, координация и контроль проектов</p>
                             </div>
                         </div>
                         <div class="feature-item">
-                            <div class="feature-icon">🏃‍♂️</div>
+                            <div class="feature-icon"><i class="fa-solid fa-person-running" aria-hidden="true"></i></div>
                             <div class="feature-content">
                                 <h5>Scrum Master</h5>
                                 <p>Фасилитация agile-процессов и развитие команды</p>
                             </div>
                         </div>
                         <div class="feature-item">
-                            <div class="feature-icon">📋</div>
+                            <div class="feature-icon"><i class="fa-solid fa-clipboard-list" aria-hidden="true"></i></div>
                             <div class="feature-content">
                                 <h5>Product Owner</h5>
                                 <p>Управление продуктовой стратегией и backlog</p>
                             </div>
                         </div>
                         <div class="feature-item">
-                            <div class="feature-icon">📈</div>
+                            <div class="feature-icon"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></div>
                             <div class="feature-content">
                                 <h5>Business Analyst</h5>
                                 <p>Анализ требований и бизнес-процессов</p>
@@ -294,7 +289,49 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Pricing Section -->
+<section class="services-billboard" id="billboard">
+    <div class="billboard-noise" aria-hidden="true"></div>
+    <div class="billboard-ring" aria-hidden="true"></div>
+    <div class="container">
+        <div class="billboard-wrap">
+            <div class="billboard-kicker animate-fade-up">Возможности</div>
+            <h2 class="billboard-title animate-fade-up delay-1">
+                Мы собираем <span class="outline">сильные команды</span>
+            </h2>
+            <p class="billboard-sub animate-fade-up delay-2">
+                От идеи до релиза: закрываем ключевые роли, подстраиваемся под процессы, ускоряем найм и качество.
+            </p>
+            <div class="billboard-grid animate-fade-up delay-3">
+                <div class="billboard-card">
+                    <div class="card-icon"><i class="fa-solid fa-palette" aria-hidden="true"></i></div>
+                    <h4>Design</h4>
+                    <p>UI · UX · Продуктовый · Графический</p>
+                </div>
+                <div class="billboard-card">
+                    <div class="card-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></div>
+                    <h4>Development</h4>
+                    <p>Frontend · Backend · Fullstack · DevOps</p>
+                </div>
+                <div class="billboard-card">
+                    <div class="card-icon"><i class="fa-solid fa-robot" aria-hidden="true"></i></div>
+                    <h4>QA</h4>
+                    <p>Manual · Automation · Performance · Security</p>
+                </div>
+                <div class="billboard-card">
+                    <div class="card-icon"><i class="fa-solid fa-user-tie" aria-hidden="true"></i></div>
+                    <h4>PM</h4>
+                    <p>Project · Scrum · Product · BA</p>
+                </div>
+            </div>
+            <div class="billboard-actions animate-fade-up delay-4">
+                <a href="contacts.php" class="btn btn-primary btn-large">Запросить подбор команды</a>
+            </div>
+        </div>
+    </div>
+    <div class="billboard-gradient" aria-hidden="true"></div>
+    <div class="billboard-stripes" aria-hidden="true"></div>
+</section>
+
 <section class="pricing-section" id="pricing">
     <div class="container">
         <div class="section-header">
@@ -380,7 +417,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Process Section -->
 <section class="process-section" id="process">
     <div class="container">
         <div class="section-header">
@@ -439,7 +475,38 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- CTA Section -->
+
+<section class="narrative-section" id="capabilities">
+    <div class="container">
+        <div class="narrative-wrap">
+            <div class="narrative-badge">Почему мы</div>
+            <h2 class="narrative-title animate-fade-up">Быстрее найм. Выше планка качества.</h2>
+            <div class="narrative-grid animate-fade-up delay-1">
+                <div class="narrative-card">
+                    <div class="narrative-num">01</div>
+                    <h4>Глубокий бриф</h4>
+                    <p>Погружаемся в продукт, стек, культуру. Согласуем критерии до старта.</p>
+                </div>
+                <div class="narrative-card">
+                    <div class="narrative-num">02</div>
+                    <h4>Сильный поток</h4>
+                    <p>Ищем активно: базы, сообщества, рекомендации. Тестируем гипотезы поиска.</p>
+                </div>
+                <div class="narrative-card">
+                    <div class="narrative-num">03</div>
+                    <h4>Точная оценка</h4>
+                    <p>Скрининг по софту, тесты/кейсы по харду. Предотвращаем миссматч заранее.</p>
+                </div>
+                <div class="narrative-card">
+                    <div class="narrative-num">04</div>
+                    <h4>Прозрачный процесс</h4>
+                    <p>Сервисные SLA, канбан‑статусы, еженедельные отчеты — всё видно и предсказуемо.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="cta-section" id="cta">
     <div class="container">
         <div class="cta-content">
@@ -449,14 +516,13 @@ include 'partials/header.php';
             </p>
             <div class="cta-buttons animate-fade-up delay-2">
                 <a href="contacts.php" class="btn btn-primary btn-large">Получить консультацию</a>
-                <a href="tel:+37060123456" class="btn btn-secondary btn-large">+370 601 23456</a>
+                
             </div>
         </div>
     </div>
 </section>
 
 <style>
-/* Services Page Specific Styles */
 .services-hero {
     padding: 120px 0 80px;
     background: var(--gradient-light);
@@ -601,6 +667,53 @@ include 'partials/header.php';
     font-weight: var(--font-weight-medium);
 }
 
+.services-billboard {
+    position: relative;
+    background: var(--primary-dark);
+    color: var(--white);
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.billboard-wrap { max-width: 1200px; margin: 0 auto; padding: 0 20px; position: relative; z-index: 2; }
+.billboard-kicker { font-size: 14px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-bottom: 12px; }
+.billboard-title { font-size: clamp(36px, 6vw, 80px); line-height: 0.95; margin-bottom: 16px; font-weight: var(--font-weight-bold); }
+.billboard-title .outline { color: transparent; -webkit-text-stroke: 2px var(--accent-amber); }
+.billboard-sub { font-size: clamp(18px, 2.2vw, 26px); color: rgba(255,255,255,0.9); max-width: 900px; }
+
+.billboard-grid { margin-top: 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+.billboard-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14); border-radius: var(--radius-large); padding: 24px; backdrop-filter: blur(6px); transition: transform var(--transition-medium), box-shadow var(--transition-medium); }
+.billboard-card:hover { transform: translateY(-6px); box-shadow: 0 12px 40px rgba(0,0,0,0.35); }
+.billboard-card h4 { margin: 12px 0 6px; color: var(--white); }
+.billboard-card p { margin: 0; color: rgba(255,255,255,0.8); font-size: 14px; }
+.card-icon { width: 48px; height: 48px; border-radius: 12px; background: rgba(255,255,255,0.12); display: flex; align-items: center; justify-content: center; color: var(--accent-amber); font-size: 20px; }
+
+.billboard-actions { margin-top: 32px; }
+
+.billboard-noise { position: absolute; inset: 0; background: radial-gradient(circle at 20% 10%, rgba(255,196,0,0.08), transparent 40%), radial-gradient(circle at 80% 60%, rgba(255,196,0,0.06), transparent 40%); mix-blend-mode: screen; pointer-events: none; z-index: 1; }
+.billboard-ring { position: absolute; right: -15vw; top: -10vw; width: 60vw; height: 60vw; border-radius: 50%; border: 100px solid rgba(255,196,0,0.06); filter: blur(2px); z-index: 1; }
+.billboard-gradient { position: absolute; left: -20vw; bottom: -20vw; width: 60vw; height: 60vw; background: radial-gradient(circle, rgba(255,196,0,0.12), transparent 70%); z-index: 1; }
+.billboard-stripes { position: absolute; inset: 0; background-image: repeating-linear-gradient(120deg, rgba(255,255,255,0.03) 0, rgba(255,255,255,0.03) 2px, transparent 2px, transparent 10px); pointer-events: none; z-index: 1; }
+
+@media (max-width: 768px) {
+    .billboard-title { -webkit-text-stroke-width: 1.5px; }
+}
+
+/* Narrative Capabilities Section */
+.narrative-section { background: var(--white); padding: 80px 0; position: relative; }
+.narrative-wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+.narrative-badge { display: inline-block; font-size: 12px; letter-spacing: .18em; text-transform: uppercase; background: var(--neutral-light); border: 1px solid var(--neutral-medium); color: var(--text-secondary); padding: 6px 10px; border-radius: 999px; margin-bottom: 16px; }
+.narrative-title { font-size: clamp(28px, 4.5vw, 48px); line-height: 1.05; color: var(--primary-dark); margin-bottom: 28px; }
+.narrative-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.narrative-card { background: var(--neutral-light); border: 1px solid var(--neutral-medium); border-radius: var(--radius-large); padding: 24px; transition: transform var(--transition-medium), box-shadow var(--transition-medium); }
+.narrative-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-soft); }
+.narrative-num { font-weight: var(--font-weight-bold); color: var(--primary-amber); font-size: 14px; margin-bottom: 8px; letter-spacing: .08em; }
+.narrative-card h4 { margin-bottom: 8px; color: var(--primary-dark); font-size: 18px; }
+.narrative-card p { margin: 0; color: var(--text-secondary); font-size: 14px; }
+
+@media (max-width: 768px) {
+    .narrative-title { font-size: 28px; }
+}
 .service-image img {
     width: 100%;
     height: auto;
@@ -783,7 +896,6 @@ include 'partials/header.php';
     letter-spacing: 0.5px;
 }
 
-/* Responsive Design for Services Page */
 @media (max-width: 1024px) {
     .service-content {
         grid-template-columns: 1fr;
