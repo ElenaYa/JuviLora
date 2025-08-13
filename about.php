@@ -5,7 +5,6 @@ $current_page = "about";
 include 'partials/header.php';
 ?>
 
-<!-- About Hero Section -->
 <section class="about-hero" id="about-hero">
     <div class="container">
         <div class="about-hero-content">
@@ -40,13 +39,48 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Mission & Vision Section -->
+<section class="about-narrative" id="culture">
+    <div class="narrative-noise" aria-hidden="true"></div>
+    <div class="narrative-ring" aria-hidden="true"></div>
+    <div class="container">
+        <div class="narrative-wrap">
+            <div class="narrative-badge">Культура и подход</div>
+            <h2 class="narrative-title animate-fade-up">Честный диалог. Видимый процесс. <span class="outline">Ощутимый результат.</span></h2>
+            <p class="narrative-lead animate-fade-up delay-1">
+                Мы работаем прозрачно и быстро: фиксируем ожидания, показываем прогресс в реальном времени и доставляем кандидатов, которые подходят по навыкам и по культуре.
+            </p>
+            <div class="narrative-grid animate-fade-up delay-2">
+                <div class="narrative-card">
+                    <div class="card-icon"><i class="fa-solid fa-handshake" aria-hidden="true"></i></div>
+                    <h4>Партнерство, не поставка</h4>
+                    <p>Погружаемся в продукт и контекст бизнеса, чтобы строить долгосрочные отношения, а не закрывать «вакансии».</p>
+                </div>
+                <div class="narrative-card">
+                    <div class="card-icon"><i class="fa-solid fa-timeline" aria-hidden="true"></i></div>
+                    <h4>Прозрачные SLA</h4>
+                    <p>Согласованные сроки, канбан‑статусы, апдейты еженедельно. Вы знаете, где мы и что дальше.</p>
+                </div>
+                <div class="narrative-card">
+                    <div class="card-icon"><i class="fa-solid fa-ranking-star" aria-hidden="true"></i></div>
+                    <h4>Качество выше шума</h4>
+                    <p>Меньше резюме — больше смысла. Скрининг по софту, тест‑кейсы по харду, проверка референсов.</p>
+                </div>
+            </div>
+            <div class="narrative-metrics animate-fade-up delay-3">
+                <div class="metric"><span class="num">10–14</span><span class="label">дней до оффера</span></div>
+                <div class="metric"><span class="num">95%</span><span class="label">успешных наймов</span></div>
+                <div class="metric"><span class="num">72</span><span class="label">NPS клиентов</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="mission-vision" id="mission">
     <div class="container">
         <div class="mission-content">
             <div class="mission-card glass-card animate-fade-up">
                 <div class="mission-icon">
-                    <img src="img/icon-mission.webp" alt="Миссия" loading="lazy">
+                    <i class="fa-solid fa-bullseye" aria-hidden="true"></i>
                 </div>
                 <h3>Наша миссия</h3>
                 <p>
@@ -58,7 +92,7 @@ include 'partials/header.php';
             
             <div class="vision-card glass-card animate-fade-up delay-1">
                 <div class="vision-icon">
-                    <img src="img/icon-vision.webp" alt="Видение" loading="lazy">
+                    <i class="fa-solid fa-eye" aria-hidden="true"></i>
                 </div>
                 <h3>Наше видение</h3>
                 <p>
@@ -70,7 +104,7 @@ include 'partials/header.php';
             
             <div class="values-card glass-card animate-fade-up delay-2">
                 <div class="values-icon">
-                    <img src="img/icon-values.webp" alt="Ценности" loading="lazy">
+                    <i class="fa-solid fa-handshake" aria-hidden="true"></i>
                 </div>
                 <h3>Наши ценности</h3>
                 <p>
@@ -83,7 +117,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Team Section -->
 <section class="team-section" id="team">
     <div class="container">
         <div class="section-header">
@@ -105,13 +138,7 @@ include 'partials/header.php';
                         15+ лет опыта в HR и рекрутинге. Специализируется на поиске 
                         топ-менеджеров и технических лидеров.
                     </p>
-                    <div class="member-social">
-                        <a href="#" aria-label="LinkedIn">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                            </svg>
-                        </a>
-                    </div>
+                
                 </div>
             </div>
             
@@ -126,13 +153,6 @@ include 'partials/header.php';
                         Экспертиза в подборе разработчиков и DevOps-инженеров. 
                         Глубокое понимание современных технологий.
                     </p>
-                    <div class="member-social">
-                        <a href="#" aria-label="LinkedIn">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                            </svg>
-                        </a>
-                    </div>
                 </div>
             </div>
             
@@ -147,20 +167,12 @@ include 'partials/header.php';
                         Специализируется на поиске дизайнеров и UX/UI-специалистов. 
                         Большой опыт работы с креативными профессиями.
                     </p>
-                    <div class="member-social">
-                        <a href="#" aria-label="LinkedIn">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                            </svg>
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Process Section -->
 <section class="process-section" id="process">
     <div class="container">
         <div class="section-header">
@@ -229,7 +241,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Achievements Section -->
 <section class="achievements-section" id="achievements">
     <div class="container">
         <div class="achievements-content">
@@ -268,7 +279,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- CTA Section -->
 <section class="cta-section" id="cta">
     <div class="container">
         <div class="cta-content">
@@ -285,7 +295,6 @@ include 'partials/header.php';
 </section>
 
 <style>
-/* About Page Specific Styles */
 .about-hero {
     padding: 100px 0 80px;
     background: var(--gradient-light);
@@ -369,11 +378,11 @@ include 'partials/header.php';
     justify-content: center;
 }
 
-.mission-icon img,
-.vision-icon img,
-.values-icon img {
-    width: 48px;
-    height: 48px;
+.mission-icon i,
+.vision-icon i,
+.values-icon i {
+    font-size: 36px;
+    color: var(--primary-dark);
 }
 
 .mission-card h3,
@@ -461,6 +470,28 @@ include 'partials/header.php';
     transform: translateY(-2px);
 }
 
+.about-narrative { position: relative; background: var(--primary-dark); color: var(--white); overflow: hidden; padding: 90px 0; }
+.narrative-wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px; position: relative; z-index: 2; }
+.narrative-badge { display: inline-block; font-size: 12px; letter-spacing: .18em; text-transform: uppercase; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.18); color: rgba(255,255,255,.8); padding: 6px 10px; border-radius: 999px; margin-bottom: 16px; }
+.narrative-title { font-size: clamp(28px, 4.8vw, 56px); line-height: 1.05; margin-bottom: 16px; font-weight: var(--font-weight-bold); }
+.narrative-title .outline { color: transparent; -webkit-text-stroke: 2px var(--accent-amber); }
+.narrative-lead { font-size: clamp(18px, 2.2vw, 24px); color: rgba(255,255,255,.9); max-width: 900px; margin-bottom: 24px; }
+.narrative-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-top: 12px; }
+.narrative-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14); border-radius: var(--radius-large); padding: 24px; backdrop-filter: blur(6px); transition: transform var(--transition-medium), box-shadow var(--transition-medium); }
+.narrative-card:hover { transform: translateY(-6px); box-shadow: 0 12px 40px rgba(0,0,0,0.35); }
+.narrative-card h4 { margin: 10px 0 6px; color: var(--white); font-size: 18px; }
+.narrative-card p { margin: 0; color: rgba(255,255,255,0.85); font-size: 14px; }
+.narrative-card .card-icon { width: 48px; height: 48px; border-radius: 12px; background: rgba(255,255,255,0.12); display: flex; align-items: center; justify-content: center; color: var(--accent-amber); font-size: 20px; }
+.narrative-metrics { display: flex; gap: 20px; margin-top: 28px; flex-wrap: wrap; }
+.metric { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.16); border-radius: var(--radius-large); padding: 16px 20px; display: flex; align-items: baseline; gap: 10px; }
+.metric .num { font-size: 28px; font-weight: var(--font-weight-bold); color: var(--accent-amber); }
+.metric .label { font-size: 14px; color: rgba(255,255,255,0.85); }
+.narrative-noise { position: absolute; inset: 0; background: radial-gradient(circle at 20% 10%, rgba(255,196,0,0.08), transparent 40%), radial-gradient(circle at 80% 60%, rgba(255,196,0,0.06), transparent 40%); mix-blend-mode: screen; pointer-events: none; z-index: 1; }
+.narrative-ring { position: absolute; right: -15vw; top: -10vw; width: 60vw; height: 60vw; border-radius: 50%; border: 100px solid rgba(255,196,0,0.06); filter: blur(2px); z-index: 1; }
+
+@media (max-width: 768px) {
+    .narrative-title { -webkit-text-stroke-width: 1.5px; font-size: 28px; }
+}
 .process-section {
     padding: 80px 0;
     background: var(--white);
@@ -573,7 +604,6 @@ include 'partials/header.php';
     box-shadow: var(--shadow-medium);
 }
 
-/* Responsive Design for About Page */
 @media (max-width: 1024px) {
     .about-hero-content,
     .achievements-content {

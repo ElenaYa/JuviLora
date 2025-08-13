@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initHeaderScroll();
     initLazyLoading();
     
-    console.log('JuviLora website initialized');
 });
 
 // Scroll-triggered animations
@@ -211,12 +210,10 @@ function initCookieBanner() {
 
     function loadAnalytics() {
         // Placeholder for analytics code (Google Analytics, etc.)
-        console.log('Analytics cookies accepted - loading tracking scripts');
     }
 
     function loadMarketing() {
         // Placeholder for marketing code (Facebook Pixel, etc.)
-        console.log('Marketing cookies accepted - loading marketing scripts');
     }
 }
 
@@ -483,7 +480,6 @@ function hideNotification(notification) {
 function trackPageLoad() {
     window.addEventListener('load', function() {
         const loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
-        console.log(`Page loaded in ${loadTime}ms`);
         
         // Track to analytics if enabled
         const cookiePrefs = getCookie('cookie_preferences');
@@ -491,7 +487,6 @@ function trackPageLoad() {
             const prefs = JSON.parse(cookiePrefs);
             if (prefs.analytics) {
                 // Send to analytics
-                console.log('Tracking page load time:', loadTime);
             }
         }
     });
